@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.outer_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.inner_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    padding: 10px;
+    height: 70vh;
+    
+    
+}
+.app_title{
+    margin:20px 0;
+}
+.title{
+    animation: head 1s infinite ;
+    animation-direction: reverse;
+    letter-spacing: 2px;
+}
+@keyframes head{
+    0%{color:black;}
+    50%{color:blue;}
+    75%{color:green;}
+    100%{color: red;}
+}
+
+
+.bookmarks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:lightgrey;
+    width:60%;
+    border-radius: 15px;
+
+}
+.bookmarks h2{
+    color:blue;
+    margin:10px 0 25px 0
+}
+
+
+.input_style{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    margin-bottom: 10px;
+}
+.input_style input{
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
+    width: 250px;
+   
+    outline: none;
+    border: none;
+    border-bottom: 2px solid blue;
+
+}
+
+.savebtn{
+    padding: 10px 20px;
+    background-color:blue;
+    color: white;
+    width:250px;
+    border-radius: 10px;
+    letter-spacing: 15px;
+    outline: none;
+    border: none;
+    margin:15px 0;
+}
+
+.savebtn:hover{
+    background-color:green;
+    color: white;
+}
+.bookmarklist{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    width: 420px;
+    height:250px;
+    overflow: auto;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+.bookmarklist_div{
+    border-bottom: 1px solid black;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.visitbtn{
+background-color: green;
+color: white;
+padding: 5px 15px;
+font-size: 15px;
+border-radius: 10px;
+margin: 0 10px;
+letter-spacing: 3px;
+}
+
+.deletebtn{
+    background-color: red;
+    color: white;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    }
+
+    button{
+        cursor: pointer;
+    }
+
+    @media screen and (max-width:992px){
+        .bookmarks{
+            width: 70%;
+        } 
+        .bookmarklist{
+            width: 50%;
+        }
+        .bookmarklist_div{
+            width: 100%;
+        }
+        .bookmarklist_div h3{
+            font-size: 15px;
+        } 
+        .visitbtn,.deletebtn{font-size: 12px;padding: 5px;}
+    }
+
+    @media screen and (max-width:768px){
+        .bookmarks h2{
+            font-size: 20px;
+            margin:10px 0 18px 0
+         }
+         .input_style{
+             width: 300px;
+             justify-content: space-around;
+         }     
+         .input_style input{
+             width: 150px;
+             font-size: 12px;
+         }
+         label{
+             font-size: 15px;
+         }
+         .savebtn{width: 200px}
+
+         .title{font-size: 22px} 
+    }
+
+    @media screen and (max-width:600px){
+        .input_style{
+           flex-direction: column;
+           
+        }  
+        .input_style input{
+           margin-top: 10px;
+           width: 200px;
+        }
+        .bookmarks h2{
+            font-size: 15px;}
+            .savebtn{width: 150px}
+    }
+
+
+    @media screen and (max-width:480px){
+
+         .input_style input{
+            margin-top: 10px;
+            width: 170px;
+            padding: 5px
+         }
+         .bookmarks h2{
+             font-size: 13px;}
+             .savebtn{width: 140px}
+             label{
+                font-size: 12px;
+            }
+    }

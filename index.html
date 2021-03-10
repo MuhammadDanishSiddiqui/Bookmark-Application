@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bookmark</title>
+</head>
+<body>
+    <div class="outer_div">
+        <div class="inner_div">
+            <div class="app_title">
+                <h1 class="title">Bookmarker</h1>
+            </div>
+            <div class="bookmarks">
+                <h2>Bookmark Your Favourite Sites</h2>
+                <div class="input_style">
+                    <label for="site_name">Site Name:</label>
+                    <input id="site_name" type="text" placeholder="Website Name">
+                </div>
+                <div class="input_style">
+                    <label for="site_url">Site Url:</label>
+                    <input id="site_url" type="text" placeholder="Website Url">
+                </div>
+                <button class="savebtn" onclick="saveBookmark()">Save</button>
+                <button class="savebtn" onclick="clearBookmark()">Clear</button>
+            </div> 
+            <div class="bookmarklist">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
